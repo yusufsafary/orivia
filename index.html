@@ -1,40 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Orivia · 7,777 pop art faces</title>
-<meta name="description" content="Orivia: 7,777 generative pop art portraits of Mandarin women on BNB Chain. One free per Agent ID, paid lane open to every wallet. No token, pure art. Reveal 24 hours after opening."/>
+<title>Orivia · 7,777 张波普艺术面孔</title>
+<meta name="description" content="Orivia: BNB 链上 7,777 张生成式华人女性波普艺术肖像。持有 Agent ID 免费一张, 付费通道向所有钱包开放。无代币, 纯艺术。开启 24 小时后揭晓。"/>
 <link rel="icon" href="logo.svg"/>
-<link rel="stylesheet" href="css/style.css?v=1"/>
+<link rel="stylesheet" href="css/style.css?v=2"/>
 </head>
 <body>
-<div class="strip" id="strip-text">OPENS TODAY · 10:00 UTC · REVEAL IN 24H</div>
+<div class="strip" id="strip-text">今日开启 · 10:00 UTC · 24 小时后揭晓</div>
 <header class="site">
   <a class="brand" href="./"><img src="logo.svg" width="30" height="30" alt=""/>ORIVIA</a>
   <nav>
-    <a href="#mint" data-i18n="nav.mint">Mint</a>
-    <a href="market.html" data-i18n="nav.market">Market</a>
-    <a href="orivia-skill.md" data-i18n="nav.skill">Skill file</a>
+    <a href="#mint" data-i18n="nav.mint">铸造</a>
+    <a href="market.html" data-i18n="nav.market">市场</a>
+    <a href="orivia-skill.md" data-i18n="nav.skill">技能文件</a>
   </nav>
-  <button class="lang-btn" id="lang-btn" type="button">中文</button>
+  <button class="lang-btn" id="lang-btn" type="button">EN</button>
 </header>
+<div class="ribbon" aria-hidden="true"><div class="ribbon-track"><span data-i18n="ribbon.t">ORIVIA · 7,777 张独一无二的面孔 · 波普艺术 · 无代币 · 首铸免费 · </span><span data-i18n="ribbon.t">ORIVIA · 7,777 张独一无二的面孔 · 波普艺术 · 无代币 · 首铸免费 · </span><span data-i18n="ribbon.t">ORIVIA · 7,777 张独一无二的面孔 · 波普艺术 · 无代币 · 首铸免费 · </span><span data-i18n="ribbon.t">ORIVIA · 7,777 张独一无二的面孔 · 波普艺术 · 无代币 · 首铸免费 · </span></div></div>
 
 <section id="hero">
+  <span class="sp s1" aria-hidden="true">✦</span>
+  <span class="sp s2" aria-hidden="true">✿</span>
+  <span class="sp s3" aria-hidden="true">✦</span>
+  <span class="sp s4" aria-hidden="true">✿</span>
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="kicker" data-i18n="hero.kicker">POP ART PORTRAITS · 7,777 FACES · NO TOKEN</div>
-        <h1 data-i18n-html="hero.h1">Every face,<br/><span class="hl">one of one.</span></h1>
-        <p class="lede" data-i18n="hero.lede">Pop art portraits of Mandarin women, drawn by code the moment an agent mints. Bold colour, halftone dots, jade and gold. Every face different, every seed locked on chain, every work hidden until reveal day.</p>
+        <div class="kicker" data-i18n="hero.kicker">波普艺术肖像 · 7,777 张脸 · 无代币</div>
+        <h1 data-i18n-html="hero.h1">每张脸,<br/><span class="hl">都是唯一。</span></h1>
+        <p class="lede" data-i18n="hero.lede">华人女性的波普艺术肖像, 在智能体铸造的那一刻由代码绘成。大胆的色彩, 半调圆点, 翡翠与金。每张脸各不相同, 每个种子都锁定在链上, 每件作品在揭晓日之前都保持隐藏。</p>
         <div class="board">
-          <div class="stat"><span data-i18n="board.minted">MINTED</span><b id="b-minted">–</b></div>
-          <div class="stat"><span data-i18n="board.left">SUPPLY LEFT</span><b id="b-left">–</b></div>
-          <div class="stat"><span data-i18n="board.listed">ON MARKET</span><b id="b-listed">–</b></div>
-          <div class="stat"><span id="cd-label">OPENS IN</span><b id="cd">–</b></div>
+          <div class="stat"><span data-i18n="board.minted">已铸造</span><b id="b-minted">–</b></div>
+          <div class="stat"><span data-i18n="board.left">剩余供应</span><b id="b-left">–</b></div>
+          <div class="stat"><span data-i18n="board.listed">市场在售</span><b id="b-listed">–</b></div>
+          <div class="stat"><span id="cd-label">开启倒计时</span><b id="cd">–</b></div>
         </div>
         <div class="supplybar"><i id="supply-bar"></i></div>
-        <div class="hero-note" data-i18n="hero.note">FREE WITH AGENT ID · PAID 0.000636 BNB · MAX 20 PER WALLET</div>
+        <div class="hero-note" data-i18n="hero.note">持有 AGENT ID 免费 · 付费 0.000636 BNB · 每钱包最多 20 件</div>
       </div>
       <div class="faces" aria-hidden="true">
         <div class="face-card a"><img src="img/sample-a.svg" alt=""/></div>
@@ -45,35 +50,50 @@
   </div>
 </section>
 
+<section class="gallery">
+  <div class="wrap">
+    <div class="kicker" data-i18n="gal.kicker">抢先预览</div>
+    <h2 data-i18n="gal.h2">先认识她们几位。</h2>
+  </div>
+  <div class="gal-row">
+    <div class="gal-card t1"><img src="img/sample-a.svg" alt=""/></div>
+    <div class="gal-card t2"><img src="img/sample-d.svg" alt=""/></div>
+    <div class="gal-card t3"><img src="img/sample-e.svg" alt=""/></div>
+    <div class="gal-card t1"><img src="img/sample-b.svg" alt=""/></div>
+    <div class="gal-card t2"><img src="img/sample-f.svg" alt=""/></div>
+    <div class="gal-card t3"><img src="img/sample-c.svg" alt=""/></div>
+  </div>
+</section>
+
 <section class="gate" id="mint">
   <div class="wrap">
-    <div class="kicker" data-i18n="mint.kicker">01 · MINT</div>
-    <h2 data-i18n="mint.h2">Mint blind. Meet her tomorrow.</h2>
-    <p class="wide" data-i18n="mint.p1">Minting runs only through AI agents holding a Binance Agentic Wallet. This page never moves. It reads the chain and shows the door. Your agent walks through it, free once with an Agent ID, then on the paid lane open to every wallet.</p>
+    <div class="kicker" data-i18n="mint.kicker">01 · 铸造</div>
+    <h2 data-i18n="mint.h2">盲铸。明天与她相见。</h2>
+    <p class="wide" data-i18n="mint.p1">铸造只能通过持有 Binance Agentic Wallet 的 AI 智能体进行。本页从不移动, 只读取链上数据并指出大门所在。你的智能体走进大门:持 Agent ID 免费一次, 之后走对所有钱包开放的付费通道。</p>
     <div class="lanes">
       <div class="lane free">
-        <span class="lane-tag" data-i18n="free.tag">FREE LANE</span>
-        <h3 data-i18n="free.h3">One free face per Agent ID</h3>
-        <p data-i18n="free.p">Wallets holding an Agent ID (SPACE ID .ai name) mint one Orivia free. A small maths question from the contract guards the door. Your agent reads its own question, answers, and mints. One free mint per wallet, ever.</p>
+        <span class="lane-tag" data-i18n="free.tag">免费通道</span>
+        <h3 data-i18n="free.h3">每个 Agent ID 一张免费脸</h3>
+        <p data-i18n="free.p">持有 Agent ID (SPACE ID 的 .ai 名字) 的钱包可免费铸造一张 Orivia。合约里的一道小型算术题守着大门。你的智能体读取属于自己的题目, 作答并铸造。每钱包限免费一次, 永久有效。</p>
         <ul>
-          <li data-i18n="free.li1">Agent ID required</li>
-          <li data-i18n="free.li2">Answer one small question</li>
-          <li data-i18n="free.li3">One per wallet</li>
+          <li data-i18n="free.li1">需要 Agent ID</li>
+          <li data-i18n="free.li2">回答一道小问题</li>
+          <li data-i18n="free.li3">每钱包一次</li>
         </ul>
       </div>
       <div class="lane paid">
-        <span class="lane-tag" data-i18n="paid.tag">PAID LANE</span>
-        <h3 data-i18n="paid.h3">0.000636 BNB, any wallet</h3>
-        <p data-i18n="paid.p">No Agent ID, no question. Any wallet mints on the paid lane at 0.000636 BNB per face, up to 20 faces per wallet across both lanes. Payment is exact, checked by the contract itself.</p>
+        <span class="lane-tag" data-i18n="paid.tag">付费通道</span>
+        <h3 data-i18n="paid.h3">0.000636 BNB, 任何钱包</h3>
+        <p data-i18n="paid.p">无需 Agent ID, 无需答题。任何钱包都能在付费通道以每张 0.000636 BNB 铸造, 两个通道合计每钱包最多 20 张。付款金额精确, 由合约本身核验。</p>
         <ul>
-          <li data-i18n="paid.li1">Open to every wallet</li>
-          <li data-i18n="paid.li2">No question asked</li>
-          <li data-i18n="paid.li3">Max 20 per wallet in total</li>
+          <li data-i18n="paid.li1">对所有钱包开放</li>
+          <li data-i18n="paid.li2">无需答题</li>
+          <li data-i18n="paid.li3">合计每钱包最多 20 张</li>
         </ul>
       </div>
     </div>
     <div class="prompt-card">
-      <div class="prompt-head"><span data-i18n="prompt.label">AGENT PROMPT · COPY AND SEND TO YOUR AGENT</span><button id="copy-prompt" type="button" data-i18n="prompt.copy">COPY</button></div>
+      <div class="prompt-head"><span data-i18n="prompt.label">智能体提示词 · 复制并发送给你的智能体</span><button id="copy-prompt" type="button" data-i18n="prompt.copy">复制</button></div>
       <pre id="agent-prompt">Mint an Orivia NFT for me. Read https://orivia.digital/orivia-skill.md and follow it exactly.
 NFT contract: 0xc3Dfd7657EDC2D784beE19FcAee5FaD0A08dCC5d (BNB Chain). Mint opens 7 Nov 2026, 10:00 UTC.
 Free lane first if my wallet holds an Agent ID and has not used it: call questionFor(myAddress) on the NFT contract, solve the small maths question, then call mintFree(answer).
@@ -81,52 +101,53 @@ Otherwise use the paid lane: mintPaid(quantity) with exactly quantity x 0.000636
 Max 20 per wallet across both lanes. Report my token id and stop after a successful mint.</pre>
     </div>
     <div class="checker">
-      <div class="kicker" style="margin-bottom:0" data-i18n="check.kicker">WALLET CHECK</div>
+      <div class="kicker" style="margin-bottom:0" data-i18n="check.kicker">钱包查询</div>
       <div class="check-row">
-        <input id="check-addr" data-i18n-ph="check.ph" placeholder="Paste your BSC wallet address" spellcheck="false"/>
-        <button id="check-btn" type="button" data-i18n="check.btn">Check</button>
+        <input id="check-addr" data-i18n-ph="check.ph" placeholder="输入你的 BSC 钱包地址" spellcheck="false"/>
+        <button id="check-btn" type="button" data-i18n="check.btn">查询</button>
       </div>
-      <div id="check-out" data-i18n="check.init">Your question and free mint status appear here. Read-only, nothing is signed.</div>
+      <div id="check-out" data-i18n="check.init">你的题目与免费铸造状态会显示在这里。只读, 无需签名。</div>
     </div>
     <figure class="workcard">
       <img src="art/unrevealed.svg" alt="Unrevealed Orivia work"/>
-      <figcaption data-i18n="card.fig">EVERY WORK UNTIL REVEAL · UNREVEALED</figcaption>
+      <figcaption data-i18n="card.fig">揭晓前每件作品 · 未揭晓</figcaption>
     </figure>
     <div class="facts">
-      <div class="fact"><span data-i18n="fact.supply">SUPPLY</span><b>7,777</b></div>
-      <div class="fact"><span data-i18n="fact.reveal">REVEAL</span><b data-i18n="fact.reveal.v">Opening + 24 hours, by contract clock</b></div>
-      <div class="fact"><span data-i18n="fact.classes">CLASSES</span><b data-i18n="fact.classes.v">Muse ±70% · Icon ±27% · Diva ±3%</b></div>
-      <div class="fact"><span data-i18n="fact.after">AFTER REVEAL</span><b data-i18n="fact.after.v">Living portrait per work, animated forever</b></div>
-      <div class="fact"><span data-i18n="fact.token">TOKEN</span><b data-i18n="fact.token.v">None. Orivia is art only</b></div>
+      <div class="fact"><span data-i18n="fact.supply">供应量</span><b>7,777</b></div>
+      <div class="fact"><span data-i18n="fact.reveal">揭晓</span><b data-i18n="fact.reveal.v">开铸 + 24 小时, 由合约时钟决定</b></div>
+      <div class="fact"><span data-i18n="fact.classes">类别</span><b data-i18n="fact.classes.v">Muse ±70% · Icon ±27% · Diva ±3%</b></div>
+      <div class="fact"><span data-i18n="fact.after">揭晓后</span><b data-i18n="fact.after.v">每件作品的动态肖像, 永远生动</b></div>
+      <div class="fact"><span data-i18n="fact.token">代币</span><b data-i18n="fact.token.v">无。Orivia 只是艺术。</b></div>
     </div>
   </div>
 </section>
 
 <section class="gate" id="market">
   <div class="wrap">
-    <div class="kicker" data-i18n="mkt.kicker">02 · MARKET</div>
-    <h2 data-i18n="mkt.h2">Faces change hands here.</h2>
-    <p class="wide" data-i18n="mkt.p1">An official escrow market, open from the first minute. List a face, buy a face, delist any time before it sells. Faces trade blind until reveal, priced on nerve and luck. A 2.5% fee goes to the project on each sale.</p>
-    <p class="wide" id="mkt-p2">Works minted so far are being counted.</p>
-    <a class="btn" href="market.html" data-i18n="mkt.btn">Open market</a>
+    <div class="kicker" data-i18n="mkt.kicker">02 · 市场</div>
+    <h2 data-i18n="mkt.h2">脸在这里易手。</h2>
+    <p class="wide" data-i18n="mkt.p1">官方托管市场从第一分钟起运行。挂单, 购买, 售出前随时下架。揭晓前脸以盲盒方式交易, 价格由胆量和运气决定。每笔交易 2.5% 手续费归项目。</p>
+    <p class="wide" id="mkt-p2">正在统计已铸造的作品。</p>
+    <a class="btn" href="market.html" data-i18n="mkt.btn">打开市场</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="links">
-      <a href="https://bscscan.com/address/0xc3Dfd7657EDC2D784beE19FcAee5FaD0A08dCC5d" target="_blank" rel="noopener"><span data-i18n="foot.nft">NFT contract</span></a>
-      <a href="https://bscscan.com/address/0xB7eb01E02c4433962feFAa23F138Ae97c04c1896" target="_blank" rel="noopener"><span data-i18n="foot.market">Market contract</span></a>
-      <a href="orivia-skill.md"><span data-i18n="foot.skill">Skill file</span></a>
-      <a href="market.html"><span data-i18n="nav.market">Market</span></a>
+      <a href="https://bscscan.com/address/0xc3Dfd7657EDC2D784beE19FcAee5FaD0A08dCC5d" target="_blank" rel="noopener"><span data-i18n="foot.nft">NFT 合约</span></a>
+      <a href="https://bscscan.com/address/0xB7eb01E02c4433962feFAa23F138Ae97c04c1896" target="_blank" rel="noopener"><span data-i18n="foot.market">市场合约</span></a>
+      <a href="orivia-skill.md"><span data-i18n="foot.skill">技能文件</span></a>
+      <a href="market.html"><span data-i18n="nav.market">市场</span></a>
     </div>
-    <p data-i18n="foot.note">Minting runs through your agent. Pages here stay read-only, market page excluded. Times shown in UTC.</p>
+    <p data-i18n="foot.note">铸造通过你的智能体运行。本页只读, 市场页除外。时间以 UTC 显示。</p>
+    <p class="foot-sign">ORIVIA ✿ 她 · 美 · 唯一</p>
   </div>
 </footer>
 
 <script src="js/config.js?v=1"></script>
 <script src="js/read.js?v=1"></script>
-<script src="js/lang.js?v=1"></script>
+<script src="js/lang.js?v=2"></script>
 <script src="js/app.js?v=4"></script>
 </body>
 </html>

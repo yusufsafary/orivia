@@ -5,6 +5,8 @@ window.OrvLang = (function () {
   var DICT = {
     en: {
       "nav.mint": "Mint", "nav.market": "Market", "nav.skill": "Skill file",
+      "ribbon.t": "ORIVIA · 7,777 ONE-OF-ONE FACES · POP ART · NO TOKEN · FIRST MINT FREE · ",
+      "gal.kicker": "SNEAK PEEK", "gal.h2": "Meet a few of her first.",
       "hero.kicker": "POP ART PORTRAITS · 7,777 FACES · NO TOKEN",
       "hero.h1": "Every face,<br/><span class=\"hl\">one of one.</span>",
       "hero.lede": "Pop art portraits of Mandarin women, drawn by code the moment an agent mints. Bold colour, halftone dots, jade and gold. Every face different, every seed locked on chain, every work hidden until reveal day.",
@@ -74,6 +76,8 @@ window.OrvLang = (function () {
     },
     zh: {
       "nav.mint": "铸造", "nav.market": "市场", "nav.skill": "技能文件",
+      "ribbon.t": "ORIVIA · 7,777 张独一无二的面孔 · 波普艺术 · 无代币 · 首铸免费 · ",
+      "gal.kicker": "抢先预览", "gal.h2": "先认识她们几位。",
       "hero.kicker": "波普艺术肖像 · 7,777 张脸 · 无代币",
       "hero.h1": "每张脸,<br/><span class=\"hl\">都是唯一。</span>",
       "hero.lede": "华人女性的波普艺术肖像, 在智能体铸造的那一刻由代码绘成。大胆的色彩, 半调圆点, 翡翠与金。每张脸各不相同, 每个种子都锁定在链上, 每件作品在揭晓日之前都保持隐藏。",
@@ -143,8 +147,8 @@ window.OrvLang = (function () {
     }
   };
 
-  var cur = "en";
-  try { cur = localStorage.getItem("orv-lang") === "zh" ? "zh" : "en"; } catch (e) {}
+  var cur = "zh";
+  try { cur = localStorage.getItem("orv-lang") === "en" ? "en" : "zh"; } catch (e) {}
   function t(key, vars) {
     var s = (DICT[cur] && DICT[cur][key]) || DICT.en[key] || key;
     if (vars) for (var k in vars) s = s.replace("{" + k + "}", vars[k]);
