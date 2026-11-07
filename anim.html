@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Orivia · Living portrait</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #FFF6EA; display: grid; place-items: center; }
+  #stage { width: min(100vmin, 800px); height: min(100vmin, 800px); }
+  #stage svg { width: 100%; height: 100%; display: block; animation: sway 9s ease-in-out infinite; transform-origin: 50% 60%; }
+  .eye { transform-box: fill-box; transform-origin: center; animation: blink 4.8s infinite; }
+  @keyframes blink { 0%, 91%, 100% { transform: scaleY(1); } 94.5% { transform: scaleY(0.06); } }
+  @keyframes sway { 0%, 100% { transform: rotate(-0.6deg) scale(1.0); } 50% { transform: rotate(0.6deg) scale(1.015); } }
+  @media (prefers-reduced-motion: reduce) { #stage svg, .eye { animation: none; } }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+(function () {
+  var id = new URLSearchParams(location.search).get("id");
+  var stage = document.getElementById("stage");
+  function load(url) {
+    return fetch(url).then(function (r) { if (!r.ok) throw new Error("nf"); return r.text(); });
+  }
+  var target = id && /^[0-9]+$/.test(id) ? "art/" + id + ".svg" : "art/unrevealed.svg";
+  load(target).then(function (svg) { stage.innerHTML = svg; })
+    .catch(function () { load("art/unrevealed.svg").then(function (svg) { stage.innerHTML = svg; }); });
+})();
+</script>
+</body>
+</html>

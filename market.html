@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Orivia · Market</title>
+<meta name="description" content="Official Orivia escrow market. Faces trade blind until reveal. 2.5% fee per sale."/>
+<link rel="icon" href="logo.svg"/>
+<link rel="stylesheet" href="css/style.css?v=1"/>
+</head>
+<body>
+<div class="strip" data-i18n="mk.strip">OFFICIAL MARKET · ESCROW · 2.5% FEE · UTC</div>
+<header class="site">
+  <a class="brand" href="./"><img src="logo.svg" width="30" height="30" alt=""/>ORIVIA</a>
+  <nav>
+    <a href="index.html#mint" data-i18n="nav.mint">Mint</a>
+    <a href="market.html" data-i18n="nav.market">Market</a>
+    <a href="orivia-skill.md" data-i18n="nav.skill">Skill file</a>
+  </nav>
+  <button class="lang-btn" id="lang-btn" type="button">中文</button>
+</header>
+
+<section class="gate" style="padding-top:44px">
+  <div class="wrap">
+    <div class="kicker" data-i18n="mk.kicker">MARKET</div>
+    <h2 data-i18n="mk.h2">Bright faces, traded blind.</h2>
+    <p class="wide" data-i18n="mk.p">Listings sit in escrow inside the market contract until sold or delisted. Buyers pay the exact listed price: 97.5% reaches the seller instantly, 2.5% goes to the project. A face keeps its mint history and seed wherever it travels.</p>
+    <div>
+      <button class="btn" id="connect-btn" type="button" data-i18n="mk.connect">Connect wallet</button>
+      <span class="wallet-line" id="wallet-line"></span>
+    </div>
+    <div class="mkt-board">
+      <div class="stat"><span data-i18n="mk.listed">LISTED</span><b id="mk-listed">–</b></div>
+      <div class="stat"><span data-i18n="mk.floor">FLOOR</span><b id="mk-floor">–</b></div>
+    </div>
+    <div id="mkt-grid"></div>
+    <p class="empty-note" id="mkt-empty" data-i18n="mk.empty">No listings yet. First listings can appear as soon as minting opens.</p>
+  </div>
+</section>
+
+<section class="gate" id="sell">
+  <div class="wrap">
+    <div class="kicker" data-i18n="sell.kicker">SELL A FACE</div>
+    <h2 data-i18n="sell.h2">List yours.</h2>
+    <div class="sell-form">
+      <input id="sell-id" data-i18n-ph="sell.id.ph" placeholder="Face number (token ID)" inputmode="numeric" spellcheck="false"/>
+      <input id="sell-price" data-i18n-ph="sell.price.ph" placeholder="Price in BNB, e.g. 0.01" inputmode="decimal" spellcheck="false"/>
+      <button class="btn" id="sell-btn" type="button" data-i18n="sell.btn">Approve and list</button>
+    </div>
+    <p class="empty-note" data-i18n="sell.note">Listing moves your face into the market contract until it sells or you delist. Two wallet confirmations: approve, then list.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="index.html"><span data-i18n="foot.back">Back to mint</span></a>
+      <a href="https://bscscan.com/address/0xB7eb01E02c4433962feFAa23F138Ae97c04c1896" target="_blank" rel="noopener"><span data-i18n="foot.market">Market contract</span></a>
+      <a href="orivia-skill.md"><span data-i18n="foot.skill">Skill file</span></a>
+    </div>
+    <p data-i18n="foot.note">Minting runs through your agent. Pages here stay read-only, market page excluded. Times shown in UTC.</p>
+  </div>
+</footer>
+
+<div id="m-status" role="status"></div>
+
+<script src="js/ethers.umd.min.js"></script>
+<script src="js/config.js?v=1"></script>
+<script src="js/read.js?v=1"></script>
+<script src="js/lang.js?v=1"></script>
+<script src="js/market.js?v=2"></script>
+</body>
+</html>

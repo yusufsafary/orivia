@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#E8352C"/>
+  <defs>
+    <pattern id="ht" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="6" fill="#FFF3E0" opacity="0.45"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="url(#ht)"/>
+  <circle cx="400" cy="392" r="252" fill="#FFC61A"/>
+  <circle cx="400" cy="368" r="196" fill="#16130E"/>
+  <path d="M400,196 C486,196 540,282 540,398 C540,512 478,606 400,606 C322,606 260,512 260,398 C260,282 314,196 400,196 Z" fill="#FFF6EA"/>
+  <circle cx="400" cy="392" r="30" fill="#16130E">
+    <animate attributeName="r" values="30;36;30" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <g font-family="monospace" fill="#FFF6EA" text-anchor="middle">
+    <text x="400" y="712" font-size="34" letter-spacing="10">UNREVEALED</text>
+    <text x="400" y="752" font-size="19" letter-spacing="3" opacity="0.85">ORIVIA · REVEAL 8 NOV 2026 · 10:00 UTC</text>
+  </g>
+</svg>
