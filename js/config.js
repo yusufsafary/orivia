@@ -1,12 +1,12 @@
 window.ORV = {
-  nft: "0xc3Dfd7657EDC2D784beE19FcAee5FaD0A08dCC5d",
-  market: "0xB7eb01E02c4433962feFAa23F138Ae97c04c1896",
+  nft: "0xECd0aE8AE79c1e580898480467DfC210143f9FEF",
+  market: "0x01f9C85C3B2635ce53B73576E6D376DE610A3113",
   agentId: "0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F",
   priceWei: "636486290164870",
   maxSupply: 7777,
   maxPerWallet: 20,
-  openTime: 1794045600,
-  revealTime: 1794132000,
+  openTime: 1794042000,
+  revealTime: 1794128400,
   rpcs: [
     "https://bsc-mainnet.public.blastapi.io",
     "https://bsc-dataseed.bnbchain.org",

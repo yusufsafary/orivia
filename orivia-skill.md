@@ -4,15 +4,15 @@ You are an agent acting for a user who wants to mint Orivia (NOVA), a pure art N
 
 ## Contracts
 
-- NFT: `0xc3Dfd7657EDC2D784beE19FcAee5FaD0A08dCC5d`
-- Official market: `0xB7eb01E02c4433962feFAa23F138Ae97c04c1896`
+- NFT: `0xECd0aE8AE79c1e580898480467DfC210143f9FEF`
+- Official market: `0x01f9C85C3B2635ce53B73576E6D376DE610A3113`
 - Agent ID registry (SPACE ID): `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F`
 - Site: https://orivia.digital
 
 ## Timing (UTC)
 
-- Mint opens: 7 November 2026, 10:00 UTC. Before that moment every mint reverts with `MintNotOpen`.
-- Reveal: 8 November 2026, 10:00 UTC, exactly 24 hours after opening. Reveal runs on the contract clock. Every tokenURI returns shared unrevealed metadata before reveal and its own artwork metadata after. No reveal transaction exists or is needed.
+- Mint opens: 7 November 2026, 09:00 UTC. Before that moment every mint reverts with `MintNotOpen`.
+- Reveal: 8 November 2026, 09:00 UTC, exactly 24 hours after opening. Reveal runs on the contract clock. Every tokenURI returns shared unrevealed metadata before reveal and its own artwork metadata after. No reveal transaction exists or is needed.
 
 ## Rules
 
@@ -23,7 +23,7 @@ You are an agent acting for a user who wants to mint Orivia (NOVA), a pure art N
 
 ## Free lane, step by step
 
-1. Confirm mint is open: `eth_call` selector `0x24bbd049` (mintOpen) on the NFT contract. If it returns 0 and the current time is before 7 Nov 2026 10:00 UTC, tell the user minting has not opened yet and stop.
+1. Confirm mint is open: `eth_call` selector `0x24bbd049` (mintOpen) on the NFT contract. If it returns 0 and the current time is before 7 Nov 2026 09:00 UTC, tell the user minting has not opened yet and stop.
 2. Confirm the wallet holds an Agent ID: `balanceOf(user)` on the SPACE ID registry must be above 0. If not, offer the paid lane instead.
 3. Confirm the free mint is unused: `eth_call` selector `0x2626c4bf` (freeUsed) with the user address padded to 32 bytes. A result of 1 means used; offer the paid lane.
 4. Read the question: `eth_call` selector `0x8f1d617b` (questionFor) with the user address padded to 32 bytes. Decode three uint256 words: `a`, `b`, `op`.
@@ -49,7 +49,7 @@ You are an agent acting for a user who wants to mint Orivia (NOVA), a pure art N
 
 ## After minting
 
-- The work shows as UNREVEALED everywhere until 8 Nov 2026 10:00 UTC. That is expected, not a failure.
+- The work shows as UNREVEALED everywhere until 8 Nov 2026 09:00 UTC. That is expected, not a failure.
 - After reveal, metadata lives at https://orivia.digital/metadata/&lt;tokenId&gt; and the living artwork at https://orivia.digital/anim.html?id=&lt;tokenId&gt;.
 - Rarity class is fixed at mint from the seed: read `rarityClassOf(tokenId)` (selector `0xcd08c0d6`): 0 Ember, 1 Nova, 2 Supernova.
 - Trading runs on the official market page: https://orivia.digital/market.html (escrow, 2.5% fee). Listing needs an approve of the market contract for the token, then `list(tokenId, priceWei)`.
