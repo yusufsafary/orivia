@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+<rect width="800" height="800" fill="#E8352C"/><defs><pattern id="bd" width="92" height="92" patternUnits="userSpaceOnUse"><circle cx="24" cy="24" r="15" fill="#FFF3E0" opacity="0.5"/></pattern></defs><rect width="800" height="800" fill="url(#bd)"/><circle cx="400" cy="392" r="252" fill="#FFC61A"/>
+<circle cx="400" cy="368" r="196" fill="#3FA97C"/><circle cx="400" cy="158" r="58" fill="#3FA97C"/>
+<path d="M168,800 C186,692 282,636 400,636 C518,636 614,692 632,800 Z" fill="#0E7A5F"/>
+<path d="M356,628 L444,628 L452,706 C420,722 380,722 348,706 Z" fill="#16130E"/>
+<circle cx="400" cy="680" r="8" fill="none" stroke="#FFC61A" stroke-width="6"/><path d="M376,680 h16 M408,680 h16" stroke="#FFC61A" stroke-width="6" stroke-linecap="round"/>
+<rect x="366" y="540" width="68" height="104" rx="30" fill="#FFE3D0"/>
+<path d="M400,208 C492,208 546,288 546,396 C546,500 484,592 400,592 C316,592 254,500 254,396 C254,288 308,208 400,208 Z" fill="#FFE3D0"/>
+<circle cx="264" cy="520" r="10" fill="#FFFFFF" stroke="#D9D2C4" stroke-width="2"/><circle cx="536" cy="520" r="10" fill="#FFFFFF" stroke="#D9D2C4" stroke-width="2"/>
+
+<path d="M298,372 L358,368" stroke="#3A2A20" stroke-width="7" stroke-linecap="round"/><path d="M442,372 L502,368" stroke="#3A2A20" stroke-width="7" stroke-linecap="round"/>
+<g class="eye"><ellipse cx="328" cy="420" rx="29" ry="17" fill="#FFFFFF"/>
+      <circle cx="328" cy="421" r="12.5" fill="#2A2320"/>
+      <circle cx="332" cy="416" r="4" fill="#FFFFFF"/>
+      <path d="M298,413 Q328,400 358,413" fill="none" stroke="#26221F" stroke-width="7" stroke-linecap="round"/></g><path d="M446,422 Q472,438 498,422" fill="none" stroke="#26221F" stroke-width="7" stroke-linecap="round"/>
+<path d="M400,452 L393,480 Q400,487 409,482" fill="none" stroke="#C98A5E" stroke-width="5" stroke-linecap="round"/>
+<path d="M358,545 C376,534 424,534 442,545 C424,556 376,556 358,545 Z" fill="#B03060"/><path d="M356,545 L444,545" stroke="#00000033" stroke-width="3" stroke-linecap="round"/>
+<circle cx="320" cy="522" r="5.5" fill="#2A1E18"/>
+<path d="M262,396 C270,268 326,190 400,190 C474,190 530,268 538,396 C492,318 458,304 400,304 C342,304 308,318 262,396 Z" fill="#3FA97C"/>
+<path d="M352,128 L470,196" stroke="#E8B33C" stroke-width="9" stroke-linecap="round"/><circle cx="476" cy="200" r="12" fill="#2FA36B"/>
+<path d="M470,158 L606,262" stroke="#E8B33C" stroke-width="9" stroke-linecap="round"/><circle cx="612" cy="268" r="11" fill="#2FA36B"/>
+
+<g font-family="monospace" fill="#16130E" opacity="0.8">
+<text x="40" y="66" font-size="25" letter-spacing="5">ORIVIA #14</text>
+<text x="760" y="66" font-size="25" letter-spacing="5" text-anchor="end">MUSE</text>
+</g>
+</svg>

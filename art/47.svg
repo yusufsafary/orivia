@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+<rect width="800" height="800" fill="#16130E"/><defs><pattern id="ht" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="6" fill="#E8352C" opacity="0.5"/></pattern></defs><rect width="800" height="800" fill="url(#ht)"/><circle cx="400" cy="392" r="252" fill="#FFC61A"/>
+<circle cx="400" cy="368" r="196" fill="#FF6FA5"/>
+<path d="M168,800 C186,692 282,636 400,636 C518,636 614,692 632,800 Z" fill="#B3122E"/>
+<path d="M356,628 L444,628 L452,706 C420,722 380,722 348,706 Z" fill="#5B3FA8"/>
+<circle cx="400" cy="680" r="8" fill="none" stroke="#FFC61A" stroke-width="6"/><path d="M376,680 h16 M408,680 h16" stroke="#FFC61A" stroke-width="6" stroke-linecap="round"/>
+<rect x="366" y="540" width="68" height="104" rx="30" fill="#F5C69B"/>
+<path d="M400,182 C474,182 522,272 522,404 C522,528 466,622 400,622 C334,622 278,528 278,404 C278,272 326,182 400,182 Z" fill="#F5C69B"/>
+<circle cx="252" cy="514" r="7" fill="#E8B33C"/><path d="M252,522 v44 M244,522 v36 M260,522 v36" stroke="#D92323" stroke-width="5" stroke-linecap="round"/><circle cx="548" cy="514" r="7" fill="#E8B33C"/><path d="M548,522 v44 M540,522 v36 M556,522 v36" stroke="#D92323" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="298" cy="494" rx="22" ry="11" fill="#FF7D95" opacity="0.8"/><ellipse cx="502" cy="494" rx="22" ry="11" fill="#FF7D95" opacity="0.8"/>
+<path d="M298,377 Q328,362 358,375" fill="none" stroke="#3A2A20" stroke-width="11" stroke-linecap="round"/><path d="M442,377 Q472,362 502,375" fill="none" stroke="#3A2A20" stroke-width="11" stroke-linecap="round"/>
+<g class="eye"><ellipse cx="328" cy="420" rx="29" ry="17" fill="#FFFFFF"/>
+      <circle cx="328" cy="421" r="12.5" fill="#2A2320"/>
+      <circle cx="332" cy="416" r="4" fill="#FFFFFF"/>
+      <path d="M298,413 Q328,400 358,413" fill="none" stroke="#26221F" stroke-width="7" stroke-linecap="round"/></g><g class="eye"><ellipse cx="472" cy="420" rx="29" ry="17" fill="#FFFFFF"/>
+      <circle cx="472" cy="421" r="12.5" fill="#2A2320"/>
+      <circle cx="476" cy="416" r="4" fill="#FFFFFF"/>
+      <path d="M442,413 Q472,400 502,413" fill="none" stroke="#26221F" stroke-width="7" stroke-linecap="round"/></g>
+<path d="M400,452 L393,480 Q400,487 409,482" fill="none" stroke="#C98A5E" stroke-width="5" stroke-linecap="round"/>
+<path d="M346,540 C372,528 428,528 454,540 C434,572 366,572 346,540 Z" fill="#FF5A4E"/><path d="M356,545 L444,545" stroke="#00000033" stroke-width="3" stroke-linecap="round"/>
+<circle cx="320" cy="522" r="5.5" fill="#2A1E18"/>
+<path d="M256,410 L256,400 C260,262 322,180 400,180 C478,180 540,262 544,400 L544,410 C500,352 300,352 256,410 Z" fill="#FF6FA5"/>
+
+<path d="M470,158 L606,262" stroke="#E8B33C" stroke-width="9" stroke-linecap="round"/><circle cx="612" cy="268" r="11" fill="#2FA36B"/>
+<path d="M148,180 L154.6,203.4 L178,210 L154.6,216.6 L148,240 L141.4,216.6 L118,210 L141.4,203.4 Z" fill="#FFFFFF"/><path d="M664,278 L668.84,295.16 L686,300 L668.84,304.84 L664,322 L659.16,304.84 L642,300 L659.16,295.16 Z" fill="#FFFFFF"/><path d="M620,110 L623.96,124.04 L638,128 L623.96,131.96 L620,146 L616.04,131.96 L602,128 L616.04,124.04 Z" fill="#FFC61A"/>
+<g font-family="monospace" fill="#16130E" opacity="0.8">
+<text x="40" y="66" font-size="25" letter-spacing="5">ORIVIA #47</text>
+<text x="760" y="66" font-size="25" letter-spacing="5" text-anchor="end">ICON</text>
+</g>
+</svg>
