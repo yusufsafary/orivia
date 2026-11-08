@@ -1,0 +1,44 @@
+{
+ "name": "Orivia #33",
+ "description": "A pop art portrait of a Mandarin woman on BNB Chain, drawn by code from a seed locked at mint. Revealed 24 hours after minting opened. No token, pure art.",
+ "image": "https://orivia.digital/art/33.svg",
+ "animation_url": "https://orivia.digital/anim.html?id=33",
+ "attributes": [
+  {
+   "trait_type": "Class",
+   "value": "Muse"
+  },
+  {
+   "trait_type": "Background",
+   "value": "Big Dots"
+  },
+  {
+   "trait_type": "Hair",
+   "value": "Bob"
+  },
+  {
+   "trait_type": "Hair Color",
+   "value": "#2743C7"
+  },
+  {
+   "trait_type": "Eyes",
+   "value": "Round"
+  },
+  {
+   "trait_type": "Lips",
+   "value": "Pop Pink"
+  },
+  {
+   "trait_type": "Earrings",
+   "value": "Gold Hoops"
+  },
+  {
+   "trait_type": "Accessory",
+   "value": "None"
+  },
+  {
+   "trait_type": "Seed",
+   "value": "87679664068335705040782375817334238829148132610627959013090325203769759678381"
+  }
+ ]
+}
