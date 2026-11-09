@@ -4,12 +4,11 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Orivia · 7,777 张波普艺术面孔</title>
-<meta name="description" content="Orivia: BNB 链上 7,777 张生成式华人女性波普艺术肖像。持有 Agent ID 免费一张, 付费通道向所有钱包开放。无代币, 纯艺术。开启 24 小时后揭晓。"/>
+<meta name="description" content="Orivia: BNB 链上 7,777 张生成式华人女性波普艺术肖像。持有 Agent ID 免费一张, 付费通道向所有钱包开放。无代币, 纯艺术。全部作品现已揭晓。"/>
 <link rel="icon" href="logo.svg"/>
-<link rel="stylesheet" href="css/style.css?v=2"/>
+<link rel="stylesheet" href="css/style.css?v=3"/>
 </head>
 <body>
-<div class="strip" id="strip-text">铸造进行中 · 揭晓 8 NOV · 09:00 UTC</div>
 <header class="site">
   <a class="brand" href="./"><img src="logo.svg" width="30" height="30" alt=""/>ORIVIA</a>
   <nav>
@@ -31,20 +30,20 @@
       <div>
         <div class="kicker" data-i18n="hero.kicker">波普艺术肖像 · 7,777 张脸 · 无代币</div>
         <h1 data-i18n-html="hero.h1">每张脸,<br/><span class="hl">都是唯一。</span></h1>
-        <p class="lede" data-i18n="hero.lede">华人女性的波普艺术肖像, 在智能体铸造的那一刻由代码绘成。大胆的色彩, 半调圆点, 翡翠与金。每张脸各不相同, 每个种子都锁定在链上, 每件作品在揭晓日之前都保持隐藏。</p>
+        <p class="lede" data-i18n="hero.lede">华人女性的波普艺术肖像, 在智能体铸造的那一刻由代码绘成。大胆的色彩, 半调圆点, 翡翠与金。每张脸各不相同, 每个种子都锁定在链上, 所有面孔现已全部揭晓。</p>
         <div class="board">
           <div class="stat"><span data-i18n="board.minted">已铸造</span><b id="b-minted">–</b></div>
           <div class="stat"><span data-i18n="board.left">剩余供应</span><b id="b-left">–</b></div>
           <div class="stat"><span data-i18n="board.listed">市场在售</span><b id="b-listed">–</b></div>
-          <div class="stat"><span id="cd-label">开启倒计时</span><b id="cd">–</b></div>
+          <div class="stat"><span data-i18n="board.reveal">揭晓状态</span><b data-i18n="board.reveal.v">已揭晓</b></div>
         </div>
         <div class="supplybar"><i id="supply-bar"></i></div>
         <div class="hero-note" data-i18n="hero.note">持有 AGENT ID 免费 · 付费 0.000636 BNB · 每钱包最多 20 件</div>
       </div>
       <div class="faces" aria-hidden="true">
-        <div class="face-card a"><img src="img/sample-a.svg" alt=""/></div>
-        <div class="face-card b"><img src="img/sample-b.svg" alt=""/></div>
-        <div class="face-card c"><img src="img/sample-c.svg" alt=""/></div>
+        <div class="face-card a"><img src="art/1.svg" alt=""/></div>
+        <div class="face-card b"><img src="art/7.svg" alt=""/></div>
+        <div class="face-card c"><img src="art/46.svg" alt=""/></div>
       </div>
     </div>
   </div>
@@ -56,19 +55,21 @@
     <h2 data-i18n="gal.h2">先认识她们几位。</h2>
   </div>
   <div class="gal-row">
-    <div class="gal-card t1"><img src="img/sample-a.svg" alt=""/></div>
-    <div class="gal-card t2"><img src="img/sample-d.svg" alt=""/></div>
-    <div class="gal-card t3"><img src="img/sample-e.svg" alt=""/></div>
-    <div class="gal-card t1"><img src="img/sample-b.svg" alt=""/></div>
-    <div class="gal-card t2"><img src="img/sample-f.svg" alt=""/></div>
-    <div class="gal-card t3"><img src="img/sample-c.svg" alt=""/></div>
+    <div class="gal-card t1"><img src="art/2.svg" alt=""/><span class="gal-no">#2</span></div>
+    <div class="gal-card t2"><img src="art/5.svg" alt=""/><span class="gal-no">#5</span></div>
+    <div class="gal-card t3"><img src="art/9.svg" alt=""/><span class="gal-no">#9</span></div>
+    <div class="gal-card t1"><img src="art/15.svg" alt=""/><span class="gal-no">#15</span></div>
+    <div class="gal-card t2"><img src="art/21.svg" alt=""/><span class="gal-no">#21</span></div>
+    <div class="gal-card t3"><img src="art/25.svg" alt=""/><span class="gal-no">#25</span></div>
+    <div class="gal-card t1"><img src="art/30.svg" alt=""/><span class="gal-no">#30</span></div>
+    <div class="gal-card t2"><img src="art/42.svg" alt=""/><span class="gal-no">#42</span></div>
   </div>
 </section>
 
 <section class="gate" id="mint">
   <div class="wrap">
     <div class="kicker" data-i18n="mint.kicker">01 · 铸造</div>
-    <h2 data-i18n="mint.h2">盲铸。明天与她相见。</h2>
+    <h2 data-i18n="mint.h2">铸造一张已揭晓的脸。</h2>
     <p class="wide" data-i18n="mint.p1">铸造只能通过持有 Binance Agentic Wallet 的 AI 智能体进行。本页从不移动, 只读取链上数据并指出大门所在。你的智能体走进大门:持 Agent ID 免费一次, 之后走对所有钱包开放的付费通道。</p>
     <div class="lanes">
       <div class="lane free">
@@ -109,12 +110,12 @@ Max 20 per wallet across both lanes. Report my token id and stop after a success
       <div id="check-out" data-i18n="check.init">你的题目与免费铸造状态会显示在这里。只读, 无需签名。</div>
     </div>
     <figure class="workcard">
-      <img src="art/unrevealed.svg" alt="Unrevealed Orivia work"/>
-      <figcaption data-i18n="card.fig">揭晓前每件作品 · 未揭晓</figcaption>
+      <img src="art/46.svg" alt="Orivia #46"/>
+      <figcaption data-i18n="card.fig">已揭晓作品 · 编号 46 · DIVA</figcaption>
     </figure>
     <div class="facts">
       <div class="fact"><span data-i18n="fact.supply">供应量</span><b>7,777</b></div>
-      <div class="fact"><span data-i18n="fact.reveal">揭晓</span><b data-i18n="fact.reveal.v">开铸 + 24 小时, 由合约时钟决定</b></div>
+      <div class="fact"><span data-i18n="fact.reveal">揭晓</span><b data-i18n="fact.reveal.v">已于 2026 年 11 月 8 日揭晓</b></div>
       <div class="fact"><span data-i18n="fact.classes">类别</span><b data-i18n="fact.classes.v">Muse ±70% · Icon ±27% · Diva ±3%</b></div>
       <div class="fact"><span data-i18n="fact.after">揭晓后</span><b data-i18n="fact.after.v">每件作品的动态肖像, 永远生动</b></div>
       <div class="fact"><span data-i18n="fact.token">代币</span><b data-i18n="fact.token.v">无。Orivia 只是艺术。</b></div>
@@ -126,7 +127,7 @@ Max 20 per wallet across both lanes. Report my token id and stop after a success
   <div class="wrap">
     <div class="kicker" data-i18n="mkt.kicker">02 · 市场</div>
     <h2 data-i18n="mkt.h2">脸在这里易手。</h2>
-    <p class="wide" data-i18n="mkt.p1">官方托管市场从第一分钟起运行。挂单, 购买, 售出前随时下架。揭晓前脸以盲盒方式交易, 价格由胆量和运气决定。每笔交易 2.5% 手续费归项目。</p>
+    <p class="wide" data-i18n="mkt.p1">官方托管市场从第一分钟起运行。挂单, 购买, 售出前随时下架。所有面孔均已揭晓, 所见即所交易。每笔交易 2.5% 手续费归项目。</p>
     <p class="wide" id="mkt-p2">正在统计已铸造的作品。</p>
     <a class="btn" href="market.html" data-i18n="mkt.btn">打开市场</a>
   </div>
@@ -147,7 +148,7 @@ Max 20 per wallet across both lanes. Report my token id and stop after a success
 
 <script src="js/config.js?v=2"></script>
 <script src="js/read.js?v=1"></script>
-<script src="js/lang.js?v=2"></script>
-<script src="js/app.js?v=4"></script>
+<script src="js/lang.js?v=3"></script>
+<script src="js/app.js?v=5"></script>
 </body>
 </html>

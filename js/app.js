@@ -4,44 +4,6 @@
   var $ = function (id) { return document.getElementById(id); };
   var fmt = function (n) { return Number(n).toLocaleString("en-US"); };
 
-  function pad2(n) { return String(n).padStart(2, "0"); }
-  function cdText(target) {
-    var s = Math.max(0, Math.floor(target - Date.now() / 1000));
-    var d = Math.floor(s / 86400), h = Math.floor((s % 86400) / 3600),
-        m = Math.floor((s % 3600) / 60), ss = s % 60;
-    return (d > 0 ? d + "D " : "") + pad2(h) + ":" + pad2(m) + ":" + pad2(ss);
-  }
-  function utcText(ts) {
-    var d = new Date(ts * 1000);
-    var mon = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
-    return d.getUTCDate() + " " + mon[d.getUTCMonth()] + " · " +
-      pad2(d.getUTCHours()) + ":" + pad2(d.getUTCMinutes()) + " UTC";
-  }
-
-  var phase = "pre"; // pre -> live -> revealed
-  function tickClock() {
-    var now = Date.now() / 1000;
-    var cd = $("cd"), label = $("cd-label"), strip = $("strip-text");
-    if (now < N.openTime) {
-      phase = "pre";
-      if (label) label.textContent = L("cd.opens");
-      if (cd) cd.textContent = cdText(N.openTime);
-      if (strip) strip.textContent = L("strip.opens") + " " + utcText(N.openTime) + " · " + L("strip.reveal") + " " + utcText(N.revealTime);
-    } else if (now < N.revealTime) {
-      phase = "live";
-      if (label) label.textContent = L("cd.reveal");
-      if (cd) cd.textContent = cdText(N.revealTime);
-      if (strip) strip.textContent = L("strip.live") + " · " + L("strip.reveal") + " " + utcText(N.revealTime);
-    } else {
-      phase = "revealed";
-      if (label) label.textContent = L("cd.revealed");
-      if (cd) cd.textContent = "LIVE";
-      if (strip) strip.textContent = L("strip.live") + " · " + L("strip.revealed") + " " + utcText(N.revealTime);
-    }
-  }
-  tickClock();
-  setInterval(tickClock, 1000);
-
   function refreshBoard() {
     R.call(N.nft, N.sel.totalMinted).then(function (hex) {
       var minted = Number(BigInt(hex));
@@ -63,11 +25,11 @@
     var el = $("mkt-p2"); if (!el) return;
     el.innerHTML = L("mkt.p2", { n: '<b id="m-minted">' + fmt(lastMinted) + "</b>" });
   }
-  document.addEventListener("orv:lang", function () { tickClock(); renderP2(); });
+  document.addEventListener("orv:lang", function () { renderP2(); });
 
-  // Gentle reveal on scroll for gate content.
+  // Gentle reveal on scroll for sections and cards.
   (function () {
-    var els = document.querySelectorAll(".gate .lane, .gate .prompt-card, .gate .checker, .gate .workcard, .gate .facts, .gate .btn");
+    var els = document.querySelectorAll(".gate .lane, .gate .prompt-card, .gate .checker, .gate .workcard, .gate .facts, .gate .btn, .gate h2, .gallery .gal-card, .gallery h2, .gallery .kicker");
     var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!("IntersectionObserver" in window) || reduced) return;
     els.forEach(function (el) { el.classList.add("rv"); });
