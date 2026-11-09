@@ -315,3 +315,10 @@ footer a { display: inline-block; padding: 4px 0; }
 @media (prefers-reduced-motion: reduce) {
   .face-card.b, .face-card.c { animation: none; }
 }
+
+/* focus pass: hero ctas + slim market strip */
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn.alt{background:transparent;color:var(--ink,#16130E);border:2px solid currentColor}
+.gate.slim{padding-top:26px;padding-bottom:26px}
+.strip-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:space-between}
+.strip-row p{margin:0;font-size:17px}

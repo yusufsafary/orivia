@@ -6,15 +6,15 @@
 <title>Orivia · 7,777 张波普艺术面孔</title>
 <meta name="description" content="Orivia: BNB 链上 7,777 张生成式华人女性波普艺术肖像。持有 Agent ID 免费一张, 付费通道向所有钱包开放。无代币, 纯艺术。全部作品现已揭晓。"/>
 <link rel="icon" href="logo.svg"/>
-<link rel="stylesheet" href="css/style.css?v=3"/>
+<link rel="stylesheet" href="css/style.css?v=4"/>
 </head>
 <body>
 <header class="site">
   <a class="brand" href="./"><img src="logo.svg" width="30" height="30" alt=""/>ORIVIA</a>
   <nav>
     <a href="#mint" data-i18n="nav.mint">铸造</a>
-    <a href="market.html" data-i18n="nav.market">市场</a>
     <a href="#claim" data-i18n="nav.claim">领取</a>
+    <a href="market.html" data-i18n="nav.market">市场</a>
     <a href="orivia-skill.md" data-i18n="nav.skill">技能文件</a>
   </nav>
   <button class="lang-btn" id="lang-btn" type="button">EN</button>
@@ -40,6 +40,10 @@
         </div>
         <div class="supplybar"><i id="supply-bar"></i></div>
         <div class="hero-note" data-i18n="hero.note">持有 AGENT ID 免费 · 付费 0.000636 BNB · 每钱包最多 20 件</div>
+        <div class="hero-cta">
+          <a class="btn" href="#mint" data-i18n="hero.cta.mint">去铸造</a>
+          <a class="btn alt" href="#claim" data-i18n="hero.cta.claim">领取 $ORIVIA</a>
+        </div>
       </div>
       <div class="faces" aria-hidden="true">
         <div class="face-card a"><img src="art/1.svg" alt=""/></div>
@@ -47,23 +51,6 @@
         <div class="face-card c"><img src="art/46.svg" alt=""/></div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="gallery">
-  <div class="wrap">
-    <div class="kicker" data-i18n="gal.kicker">抢先预览</div>
-    <h2 data-i18n="gal.h2">先认识她们几位。</h2>
-  </div>
-  <div class="gal-row">
-    <div class="gal-card t1"><img src="art/2.svg" alt=""/><span class="gal-no">#2</span></div>
-    <div class="gal-card t2"><img src="art/5.svg" alt=""/><span class="gal-no">#5</span></div>
-    <div class="gal-card t3"><img src="art/9.svg" alt=""/><span class="gal-no">#9</span></div>
-    <div class="gal-card t1"><img src="art/15.svg" alt=""/><span class="gal-no">#15</span></div>
-    <div class="gal-card t2"><img src="art/21.svg" alt=""/><span class="gal-no">#21</span></div>
-    <div class="gal-card t3"><img src="art/25.svg" alt=""/><span class="gal-no">#25</span></div>
-    <div class="gal-card t1"><img src="art/30.svg" alt=""/><span class="gal-no">#30</span></div>
-    <div class="gal-card t2"><img src="art/42.svg" alt=""/><span class="gal-no">#42</span></div>
   </div>
 </section>
 
@@ -124,26 +111,40 @@ Max 20 per wallet across both lanes. Report my token id and stop after a success
   </div>
 </section>
 
-<section class="gate" id="market">
-  <div class="wrap">
-    <div class="kicker" data-i18n="mkt.kicker">02 · 市场</div>
-    <h2 data-i18n="mkt.h2">脸在这里易手。</h2>
-    <p class="wide" data-i18n="mkt.p1">官方托管市场从第一分钟起运行。挂单, 购买, 售出前随时下架。所有面孔均已揭晓, 所见即所交易。每笔交易 2.5% 手续费归项目。</p>
-    <p class="wide" id="mkt-p2">正在统计已铸造的作品。</p>
-    <a class="btn" href="market.html" data-i18n="mkt.btn">打开市场</a>
-  </div>
-</section>
-
 <section class="gate" id="claim">
   <div class="wrap">
-    <div class="kicker" data-i18n="clm.kicker">03 · 领取 $ORIVIA</div>
+    <div class="kicker" data-i18n="clm.kicker">02 · 领取 $ORIVIA</div>
     <h2 data-i18n="clm.h2">每张脸,都带着一笔 $ORIVIA。</h2>
     <p class="wide" data-i18n="clm.p1">每件 Orivia 作品可领取 250,000 $ORIVIA,每件作品限领一次,按编号记录,权利属于作品的当前持有者。领取通过你的智能体进行:打开下方领取技能文件,照着步骤做即可。</p>
     <p class="wide" data-i18n="clm.p2">代币合约 0xa9A94ffBaC4C87cF0c3e15FB0fd7EaBD8564eadd · 领取合约 0x540C092651E20bD4DB283fEC4e4f58C1fcB56690 · 奖池 1,944,250,000 $ORIVIA 已全部就位,领取现已开启。</p>
+    <p class="wide" data-i18n="clm.p3">代币上线:$ORIVIA 将于 11 月 15 日在 PancakeSwap 上线交易,首个流动性池 10 BNB。</p>
     <a class="btn" href="orivia-claim-skill.md" data-i18n="clm.btn">打开领取技能文件</a>
   </div>
 </section>
 
+<section class="gallery">
+  <div class="wrap">
+    <div class="kicker" data-i18n="gal.kicker">抢先预览</div>
+    <h2 data-i18n="gal.h2">先认识她们几位。</h2>
+  </div>
+  <div class="gal-row">
+    <div class="gal-card t1"><img src="art/2.svg" alt=""/><span class="gal-no">#2</span></div>
+    <div class="gal-card t2"><img src="art/5.svg" alt=""/><span class="gal-no">#5</span></div>
+    <div class="gal-card t3"><img src="art/9.svg" alt=""/><span class="gal-no">#9</span></div>
+    <div class="gal-card t1"><img src="art/15.svg" alt=""/><span class="gal-no">#15</span></div>
+    <div class="gal-card t2"><img src="art/21.svg" alt=""/><span class="gal-no">#21</span></div>
+    <div class="gal-card t3"><img src="art/25.svg" alt=""/><span class="gal-no">#25</span></div>
+    <div class="gal-card t1"><img src="art/30.svg" alt=""/><span class="gal-no">#30</span></div>
+    <div class="gal-card t2"><img src="art/42.svg" alt=""/><span class="gal-no">#42</span></div>
+  </div>
+</section>
+
+<section class="gate slim" id="market">
+  <div class="wrap strip-row">
+    <p data-i18n="mkt.strip">官方托管市场:挂单、购买、售出前随时下架。每笔交易 2.5% 手续费归项目。</p>
+    <a class="btn" href="market.html" data-i18n="mkt.btn">打开市场</a>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
@@ -160,7 +161,7 @@ Max 20 per wallet across both lanes. Report my token id and stop after a success
 
 <script src="js/config.js?v=2"></script>
 <script src="js/read.js?v=1"></script>
-<script src="js/lang.js?v=4"></script>
+<script src="js/lang.js?v=5"></script>
 <script src="js/app.js?v=5"></script>
 </body>
 </html>
