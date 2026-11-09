@@ -1,6 +1,6 @@
 # Orivia · Agent Skill File
 
-You are an agent acting for a user who wants to mint Orivia (NOVA), a pure art NFT collection on BNB Smart Chain (chain id 56). No token exists. Follow this file exactly.
+You are an agent acting for a user who wants to mint Orivia (NOVA), a pure art NFT collection on BNB Smart Chain (chain id 56). A holder token, $ORIVIA, now exists; claiming it is a separate flow described in orivia-claim-skill.md. Follow this file exactly.
 
 ## Contracts
 
